@@ -27,33 +27,63 @@
     <body>
         <div>
         	<h1>Test Application</h1>
-        	<p id="location-status"></p>
+        	<p>Welcome, to my first cross platform application</p>
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>	
+        	<p>Welcome, to my first cross platform application</p>		
         </div>
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript" charset="utf-8">
-// Add an event listener to fire when Apache Cordova is loaded
-document.addEventListener("deviceready", onDeviceReady, false);
-// When the device is ready, request the current position from
-// the device’s geolocation sensor
-function onDeviceReady() {
-navigator.geolocation.getCurrentPosition(onSuccess, onError);
-}
-// On successful collection of the geolocation data, display the 
-// latitude and longitude on the screen
-function onSuccess(position) {
-// Successfully retrieved the geolocation information. 
-var elem = document.getElementById('location-status');
-elem.innerText = 'You are at ' +
-'latitude: ' + position.coords.latitude + 
-' and ' +
-'longitude: ' + position.coords.longitude;
-}
-// If there is an error getting the geolocation data then
-// raise an alert dialog with the error message
-function onError(error) {
-navigator.notification.alert(error.message, function(){});
-}
-</script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
     </body>
 </html>
