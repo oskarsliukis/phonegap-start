@@ -27,63 +27,24 @@
     <body>
         <div>
         	<h1>Test Application</h1>
-        	<p>Welcome, to my first cross platform application</p>
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>	
-        	<p>Welcome, to my first cross platform application</p>		
+        	<h1 id=''></h1>	
         </div>
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
+        	function onSuccess(position) {
+				// Successfully retrieved the geolocation information. 
+				var elem = document.getElementById('location-status');
+				elem.innerText = 'You are at ' +
+				'latitude: ' + position.coords.latitude + 
+				' and ' +
+				'longitude: ' + position.coords.longitude;
+			}		
+			function onError(error) {
+				navigator.notification.alert(error.message, function(){});
+			}		
             app.initialize();
+            navigator.geolocation.getCurrentPosition(onSuccess, onError);
         </script>
     </body>
 </html>
