@@ -33,8 +33,7 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        // app.receivedEvent('deviceready');
-        navigator.geolocation.getCurrentPosition(onSuccess, onError);
+        app.receivedEvent('deviceready');
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -47,19 +46,4 @@ var app = {
 
         console.log('Received Event: ' + id);
     }
-    // On successful collection of the geolocation data, display the 
-// latitude and longitude on the screen
-function onSuccess(position) {
-// Successfully retrieved the geolocation information. 
-var elem = document.getElementById('location-status');
-elem.innerText = 'You are at ' +
-'latitude: ' + position.coords.latitude + 
-' and ' +
-'longitude: ' + position.coords.longitude;
-}
-// If there is an error getting the geolocation data then
-// raise an alert dialog with the error message
-function onError(error) {
-navigator.notification.alert(error.message, function(){});
-}
 };
