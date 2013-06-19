@@ -29,4 +29,5 @@ function showAlert() {
 
 function vibratePhone() {
     navigator.notification.vibrate(1000);
+    alert(1);
 };
