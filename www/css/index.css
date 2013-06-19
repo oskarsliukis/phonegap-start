@@ -1,17 +1,33 @@
 * {
- font-family: Arial, Helvetica, sans-serif;   
+	font-family: Arial, Helvetica, sans-serif; 
+}
+
+#header {
+	font-size: 60pt;
+	height: 60pt;
+	padding: 10pt;
+	width: 100%;
+	background-color: #222;
+	color: #fff;
+	text-align: center;
 }
 
 body {
-     background-color: #EEE;   
+     background-color: #EEE;  
+     padding: 0;
+	margin: 0;  
+}
+
+p {
+	padding: 5pt 20pt;
 }
 
 a {
- font-size: 50pt;
+	font-size: 50pt;
     color: black;
     text-decoration: none;
 }
 
 #location {
-font-size: 30pt;
-}
+	font-size: 36pt;
+	}
