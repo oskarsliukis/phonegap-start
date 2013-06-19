@@ -31,7 +31,7 @@ function vibratePhone() {
 };
 
 function getLocation() {
-	navigator.geolocation.getCurrentPosition(onSuccess, onError);
+	navigator.geolocation.getCurrentPosition(onSuccess, onError, {enableHighAccuracy: true});
 };
 
 function onSuccess(position) {
