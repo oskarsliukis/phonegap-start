@@ -28,14 +28,16 @@
         <title>Hello World</title>
     </head>
     <body>
-        <p>
+    	<script type="text/javascript">
+			init();
+    	</script>
+    	<p>
             <a href="#" onclick="showAlert('Test message.', 'Test Title');">ALERT</a>
         </p>
         <p>
             <a href="#" onclick="vibratePhone();">VIBRATE</a>
         </p>
-    	<p>
-            <a href="#" onclick="getLocation();">LOCATION</a>
+    	<p id="location">
         </p>
     </body>
 </html>
